@@ -1,0 +1,50 @@
+/*Selector universal, */
+* {
+	/*este es el espacio entre el contenido del elemento y su borde, la mayoría de veces, el navegador tiene como default cierto margen y relleno, pero seleccionando desde css o html, en este caso siendo css, colocamos un selector universal y removemos el relleno y margen que tienen por default*/	
+	padding: 0px;
+	/*margen deel contenido para sus cuatro lados, en sí, como si hubiera un margen alrededor de una caja*/
+	margin: 0px;
+}
+
+/**/
+body{
+	/*fondo de la página web, aquí definimos el color o imagen que se quiere poner*/
+	background: #f3f5f3; /*los colores se puede definir palabras clave, colores del sistema, RGB hexadecimal, RGB numérico y RGB porcentual, también en vez de color se puede poner una imagen, pero en este caso, sólo usaremos el color*/
+}
+
+main{
+	/*ancho que ocupará en la página web*/
+	width: 100%;
+	/*alto que ocupará en la página web*/
+	height: 80%;
+}
+
+header{
+	width: 100%;
+	height: 10%;
+}
+
+nav{
+	/*esto es cómo se desplegará el contenido, inline-block, crea cajas que son de bloque y en línea de forma simultánea, se comporta como si fuera de bloaque, respecto a los elementos que la rodean es una caja en línea*/
+	display: inline-block;
+}
+
+
+section{
+	background: red;
+}
+
+/*seleccionamos como clase*/
+.division1{
+	background:blue;
+}
+
+/*seleccionamos como id*/
+#division2{
+	background: purple;
+}
+
+footer{
+	width: 100%;
+	height: 10%;
+}

@@ -1,0 +1,53 @@
+<!--Determina tipo de documento que estamos creando, en etse caso siendo HTML5-->
+<!DOCTYPE html>
+<!--Comienzo de la estructura HTML, esta es la raízde la estructura del árbol-->
+<!--el atributo lang en la etiqueta <html> define el idioma humano del contenido del documento que estamos creando, yo en este caso coloqué "en" de inglés--> 
+<html lang="en"> 
+	<!--este elemento va primero es la cabecera del doc, definimos el título de nuestra pág web, declaramos el set caracteres, etc. Aquí generalmente declaramos lo que sólo podemos visualizar en el código pero no en la página web-->
+	<head> 
+		<!--La etiqueta <meta>define el juego de caracteres a utilizar para mostrar el doc, especifica cómo el texto será presentado en pantalla-->
+		<meta charset="UTF-8"><!--Esto significa 8-bit Unicode Transformation Format, reponsable de que tu navegador te muestre el contenido del texto correctamente, sin errores ni caracteres extraños, es decir, que sea capaz de usar o mostrar carcateres que usamos en nuestra lengua, como "ñ", acentos, entre otros.-->
+		<meta name="viweport" content="width=device-width, initial-scale=1.0"> <!--el viweport meta tag le dice al navegador que el ancho de la pantalla debería considerar-->
+		<link rel="stylesheet" href="style.css"> <!--el atributo "rel" se refiere a la relación que en este caso es una hoja de diseño o archvo de diseño, y el sig. atributo "href" es el hipervínvulo de la página-->
+		<title>Páginas Web - UCNL</title> <!--título de la página web-->
+	</head>
+	<!--este es el cuerpo, representa la parte visible de todo documento--> 
+	<body> 
+		<!--Cabecera de la página web-->
+		<header>
+			<!--Insertamos imagen en la página web en el header, indicándolo como logo, el atributo "src" se refiere a source, o sea, quiere decir fuente, donde insertaremos un url o la dirección de tus archivos donde se encuentra lo que quieres insertar, en caso de que no aparezca la imagen, el atributo "alt" para mostrar de qué trata la imagen-->
+			<img src="logo" alt="logo-pagweb">
+			<!--contenedor de enlaces del navegador-->
+		<main>
+			<nav class="nav">
+				<ul>
+					<li>Inicio</li>
+					<li>Tareas</li>
+					<li>Foro</li>
+					<li>Mensajes</li>
+					<li>Clases grabadas</li>
+				</ul>
+			</nav>
+		</header>
+		<!--representa una sección genérica de un documento.-->
+		<section>
+			<!--división, sirve para agrupar contenidos, definido como elemento en bloque-->
+			<div class="division1">
+				<!--propósito de una tabla es organizar la información-->
+				<table></table>
+			</div>
+			<div id="division2">
+				<!--representa una composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a distribuir de forma independiente o reutilizable-->
+				<article>
+					<table></table>
+				</article>
+				<!--representa una sección de una página que consiste en contenido que está indirectamente relacionado con el contenido principal del documento-->
+				<aside></aside>
+			</div>
+		</section>
+		</main>
+		<!--permite definir un pie de página de un documento o sección.-->
+		<footer>© Páginas Web - UCNL</footer> 
+	</body>
+	<script src="app.js"></script>
+</html>
